@@ -1,0 +1,75 @@
+# Soundtracks
+
+Tracks by **Shady Monk** (Shay.) and **DeBisco**.
+
+## Tracks
+
+| Dir | Artist | Title | Length |
+|---|---|---|---|
+| ARENA0 | Shady Monk | Stadium Remix | 4:01 |
+| ARENA1 | DeBisco | Arena 1 (Danger Room) | 2:12 |
+| ARENA2 | DeBisco | Arena 2 (Power Plant) | 2:08 |
+| ARENA4 | Shady Monk | OMF 2097 — Desert Remix (alt. loop) | 3:45 |
+| END | DeBisco | Ending (OST Version) | 2:53 |
+
+## Building
+
+Requirements: `ffmpeg` (with libopus), `flac`, `zip`, and `git-lfs` (the flac
+sources are stored via LFS).
+
+Cloning:
+
+```
+git lfs install     # one-time per user
+git clone <repo>
+```
+
+Build everything:
+
+```
+make                # encode flac → ogg in each mod dir, then bundle mod zips
+```
+
+Targets:
+
+- `make convert` — encode each `<DIR>/*.flac` → `<DIR>/<DIR>.ogg` (with loop
+  tags for ARENA0 and END)
+- `make zip` — package each mod's `.ogg`, `manifest.ini`, and `LICENSE.txt`
+  into `mod_files/<DIR>.zip`
+- `make clean` — remove generated oggs and the `mod_files/` directory
+
+The zips in `mod_files/` are the distributable mods. Each contains the `.ogg`,
+`manifest.ini`, and `LICENSE.txt` flat at the zip root.
+
+## Loop points
+
+Some tracks have an intro followed by a loopable section. When playback reaches
+the loop end, it should jump back to the loop start (not to 0:00).
+
+### ARENA0 — Stadium Remix (Shady Monk)
+
+- File: `ARENA0/Shady Monk - Stadium Remix [m1].flac`
+- Intro: 0:00 – 0:42
+- Loop start: ~0:42
+- Loop end: end of file
+
+Artist note (Shady Monk): Intro runs from 0:00 to 0:42. From 0:42/0:43 (the
+exact frame is tempo-dependent) until the end of the file is the loopable
+portion — once playback reaches the end of the file it should loop back to the
+0:42 mark.
+
+### END — Ending, OST Version (DeBisco)
+
+- File: `END/DeBisco - Ending [OST Version] [24-Bit Master] V3.flac`
+- Intro: 0:00 – 0:20
+- Loop start: 0:20
+- Loop end: 2:33 (file fades out at 2:34)
+
+Artist note (DeBisco): The OST version fades out at 2:34. To loop indefinitely,
+set loop points at 0:20 and 2:33 so the main section loops; 0:00–0:20 is used
+as the intro. Only the OST version was submitted (no separate non-fading
+master).
+
+## Licenses
+
+Each track's license is included in its directory as `LICENSE.txt`.
