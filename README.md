@@ -32,14 +32,15 @@ make                # encode flac → ogg in each mod dir, then bundle mod zips
 
 Targets:
 
-- `make convert` — encode each `<DIR>/*.flac` → `<DIR>/<DIR>.ogg` (with loop
-  tags for ARENA0 and END)
-- `make zip` — package each mod's `.ogg`, `manifest.ini`, and `LICENSE.txt`
-  into `mod_files/<DIR>.zip`
-- `make clean` — remove generated oggs and the `mod_files/` directory
+- `make convert` — encode each `<DIR>/*.flac` → `<DIR>/audio/music/<DIR>.ogg`
+  (with LOOPSTART/LOOPEND tags for ARENA0 and END)
+- `make zip` — package each mod's `manifest.ini`, `LICENSE.txt`, and
+  `audio/music/<DIR>.ogg` into `mod_files/<DIR>.zip`
+- `make clean` — remove generated `audio/` dirs and the `mod_files/` directory
 
-The zips in `mod_files/` are the distributable mods. Each contains the `.ogg`,
-`manifest.ini`, and `LICENSE.txt` flat at the zip root.
+The zips in `mod_files/` are the distributable mods. Each contains
+`manifest.ini` and `LICENSE.txt` at the root, plus the encoded ogg under
+`audio/music/<DIR>.ogg`.
 
 ## Loop points
 
