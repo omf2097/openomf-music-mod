@@ -6,11 +6,11 @@ Tracks by **Shady Monk** (Shay.) and **DeBisco**.
 
 | Dir | Artist | Title | Length |
 |---|---|---|---|
-| ARENA0 | Shady Monk | Stadium Remix | 4:01 |
+| ARENA0 | Shady Monk | Arena 0 (Stadium) | 4:01 |
 | ARENA1 | DeBisco | Arena 1 (Danger Room) | 2:12 |
 | ARENA2 | DeBisco | Arena 2 (Power Plant) | 2:08 |
-| ARENA4 | Shady Monk | OMF 2097 — Desert Remix (alt. loop) | 3:45 |
-| END | DeBisco | Ending (OST Version) | 2:53 |
+| ARENA4 | Shady Monk | Desert | 3:45 |
+| END | DeBisco | Ending | 2:53 |
 
 ## Building
 
