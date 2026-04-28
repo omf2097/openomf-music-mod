@@ -1,6 +1,6 @@
 # Soundtracks
 
-Tracks by **Shady Monk** (Shay.) and **DeBisco**.
+Tracks by **Shady Monk** (Shay.) and [**DeBisco**](https://www.debiscomusic.com/).
 
 ## Tracks
 
