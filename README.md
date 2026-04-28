@@ -47,7 +47,7 @@ The zips in `mod_files/` are the distributable mods. Each contains
 Some tracks have an intro followed by a loopable section. When playback reaches
 the loop end, it should jump back to the loop start (not to 0:00).
 
-### ARENA0 — Stadium Remix (Shady Monk)
+### ARENA0 — Stadium (Shady Monk)
 
 - File: `ARENA0/Shady Monk - Stadium Remix [m1].flac`
 - Intro: 0:00 – 0:42
@@ -59,7 +59,7 @@ exact frame is tempo-dependent) until the end of the file is the loopable
 portion — once playback reaches the end of the file it should loop back to the
 0:42 mark.
 
-### END — Ending, OST Version (DeBisco)
+### END — Ending (DeBisco)
 
 - File: `END/DeBisco - Ending [OST Version] [24-Bit Master] V3.flac`
 - Intro: 0:00 – 0:20
