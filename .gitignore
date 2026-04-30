@@ -7,3 +7,6 @@ mod_files/
 
 # Raw masters (live on backup drive)
 RAW/
+
+# IDE files
+.idea/
