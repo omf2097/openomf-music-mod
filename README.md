@@ -9,6 +9,7 @@ Tracks by [**Shady Monk**](https://linktr.ee/shadymonk) (Shay.) and [**DeBisco**
 | ARENA0 | Shady Monk | Arena 0 (Stadium) | 4:01 |
 | ARENA1 | DeBisco | Arena 1 (Danger Room) | 2:12 |
 | ARENA2 | DeBisco | Arena 2 (Power Plant) | 2:08 |
+| ARENA3 | Shady Monk | Arena 3 (Fire Pit) | 3:15 |
 | ARENA4 | Shady Monk | Arena 4 (Desert) | 3:45 |
 | END | DeBisco | Ending | 2:53 |
 
