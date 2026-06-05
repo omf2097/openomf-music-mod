@@ -15,8 +15,8 @@ Tracks by [**Shady Monk**](https://linktr.ee/shadymonk) (Shay.) and [**DeBisco**
 
 ## Building
 
-Requirements: `ffmpeg` (with libopus), `flac`, `zip`, and `git-lfs` (the flac
-sources are stored via LFS).
+Requirements: `ffmpeg` (with libopus), `ffmpeg-normalize` (install via python pip),
+flac`, `zip`, and `git-lfs` (the flac sources are stored via LFS).
 
 Cloning:
 
